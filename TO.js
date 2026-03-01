@@ -8,6 +8,9 @@ todoBtn.addEventListener('click',function(){
 
     const li=document.createElement('li')
     li.innerText=msg
+    li.addEventListener('click',function(){
+        li.remove()
+    })
 
     todoList.appendChild(li)
     todoMsg.value=''
